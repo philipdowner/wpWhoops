@@ -11,9 +11,9 @@ It makes error messages from PHP, `admin-ajax.php`, and WP REST API a _great_ de
 
 ## Installation
 
-| [Composer](https://getcomposer.org/) (recommended) | Release archive |  
-| -------------------------------------------------- | -------- |  
-| `composer require rarst/wps` | [![Download wps](https://img.shields.io/badge/download-wps.zip-blue?style=for-the-badge)](https://github.com/Rarst/wps/releases/latest/download/wps.zip) |
+| [Composer](https://getcomposer.org/) (recommended) | Release archive                                                                                                                                                                |  
+|----------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+| `composer require philipdowner/wp-whoops`          | [![Download wpWhoops](https://img.shields.io/badge/download-wpWhoops.zip-blue?style=for-the-badge)](https://github.com/philipdowner/wpWhoops/releases/latest/download/wps.zip) |
 
 ## Usage
 
