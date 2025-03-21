@@ -54,7 +54,7 @@ $wps['run']->silenceErrorsInPaths( '~/wp-content/plugins/(?!my-plugin)~', E_NOTI
 ```
 ### Testing a fatal error state
 
-If you desire a method to test that the plugin is installed correctly, you can create a simple mu-plugin. At `/wp-content/mu-plugins` create the file `trigger-fatal-error.php`. Add the following code:
+If you desire a method to test that the plugin is installed correctly, you can [create a simple mu-plugin](https://developer.wordpress.org/advanced-administration/plugins/mu-plugins/). At `/wp-content/mu-plugins` create the file `trigger-fatal-error.php`. Add the following code:
 
 ```php
 /**
