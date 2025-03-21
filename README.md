@@ -52,7 +52,28 @@ $wps['run']->silenceErrorsInPaths( '~^((?!/my-plugin/).)*$~', E_NOTICE | E_WARNI
 // Silence for plugins _except_ specific plugin.
 $wps['run']->silenceErrorsInPaths( '~/wp-content/plugins/(?!my-plugin)~', E_NOTICE | E_WARNING );
 ```
+### Testing a fatal error state
 
+If you desire a method to test that the plugin is installed correctly, you can create a simple mu-plugin. At `/wp-content/mu-plugins` create the file `trigger-fatal-error.php`. Add the following code:
+
+```php
+/**
+* Plugin Name: Trigger Fatal Error
+*/
+add_action('wp_loaded', function () {
+	if(
+		isset($_GET['triggerFatalError']) &&
+		WP_DEBUG &&
+		WP_DEBUG_DISPLAY
+	) {
+		noSuchFunction();
+	}
+}, 1);
+```
+
+On the frontend of your site, trigger an error by appending `?triggerFatalError=true` to your URL.
+
+Like Whoops, this should only be used in a non-production environment.
 
 ## License
 
