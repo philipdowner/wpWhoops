@@ -1,9 +1,5 @@
-# wps — WordPress plugin for whoops
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Rarst/wps/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Rarst/wps/?branch=master)
-[![Latest Stable Version](https://poser.pugx.org/rarst/wps/v/stable)](https://packagist.org/packages/rarst/wps)
-[![Total Downloads](https://poser.pugx.org/rarst/wps/downloads)](https://packagist.org/packages/rarst/wps)
-[![PHP version](https://img.shields.io/packagist/php-v/rarst/wps.svg)](https://packagist.org/packages/rarst/wps)
-[![Download wps](https://img.shields.io/badge/download-wps.zip-blue)](https://github.com/Rarst/wps/releases/latest/download/wps.zip)
+# wpWhoops — WordPress plugin for Whoops
+[![Download wps](https://img.shields.io/badge/download-wpWhoops.zip-blue)](https://github.com/philipdowner/wpWhoops/releases/latest/download/wps.zip)
 
 wps adds [whoops](http://filp.github.io/whoops/) error handler to a WordPress installation. 
 
