@@ -1,12 +1,14 @@
 {
-	"name"       : "rarst/wps",
+	"name"       : "philipdowner/wp-whoops",
 	"description": "WordPress plugin for whoops error handler.",
+	"version": "1.3.0",
 	"keywords"   : [
 		"wordpress",
+		"wordpress-plugin",
 		"whoops",
 		"error"
 	],
-	"type"       : "wordpress-plugin",
+	"type"       : "wordpress-muplugin",
 	"homepage"   : "https://github.com/Rarst/wps",
 	"license"    : "MIT",
 	"authors"    : [
@@ -14,6 +16,11 @@
 			"name"    : "Andrey Savchenko",
 			"email"   : "contact@rarst.net",
 			"homepage": "http://www.Rarst.net/"
+		},
+		{
+			"name": "Philip Downer",
+			"email": "manifestphil@gmail.com",
+			"homepage": "https://philipdowner.com"
 		}
 	],
 	"support"    : {

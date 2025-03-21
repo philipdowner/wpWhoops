@@ -5,6 +5,12 @@ This change log adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 
+## 1.3.0 - 2025-03-21
+- [Merges PR #16](https://github.com/Rarst/wps/pull/16) submitted to Rarst/wps to update `composer-installers` version
+- Installs plugin as a `mu-plugin` to better support development on WordPress multi-site
+- Renames plugin from `wps` to `wpWhoops` to make it more identifiable on WP Admin screens
+- Adds version number string to plugin file header and composer.json 
+
 ## 1.2 - 2018-12-18
 
 ### Added
