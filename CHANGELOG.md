@@ -5,6 +5,9 @@ This change log adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
 ## Unreleased
 
+## 1.3.1 - 2025-03-31
+- Changes plugin back to installing as standard `wordpress-plugin`, primarily due to the fact that WordPress does not support mu-plugins in subdirectories.
+
 ## 1.3.0 - 2025-03-21
 - [Merges PR #16](https://github.com/Rarst/wps/pull/16) submitted to Rarst/wps to update `composer-installers` version
 - Installs plugin as a `mu-plugin` to better support development on WordPress multi-site
