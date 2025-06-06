@@ -3,7 +3,8 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
-## Unreleased
+## 1.3.2
+- Suppresses `E_DEPRECATED` notices in all paths
 
 ## 1.3.1 - 2025-03-31
 - Changes plugin back to installing as standard `wordpress-plugin`, primarily due to the fact that WordPress does not support mu-plugins in subdirectories.
