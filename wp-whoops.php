@@ -4,7 +4,7 @@ Plugin Name: wpWhoops
 Plugin URI: https://github.com/Rarst/wps
 Description: WordPress plugin for Whoops error handler (previously wps).
 Author: Andrey "Rarst" Savchenko
-Version: 1.3.2
+Version: 1.3.3
 Author URI: http://www.rarst.net/
 License: MIT
 
@@ -26,18 +26,18 @@ FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TOR
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
 */
+add_action('plugins_loaded', function() {
+	if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
+		require __DIR__ . '/vendor/autoload.php';
+	}
 
-if ( file_exists( __DIR__ . '/vendor/autoload.php' ) ) {
-	require __DIR__ . '/vendor/autoload.php';
-}
+	if ( isset( $_GET['wps_disable'] ) ) {
+		return;
+	}
 
-if ( isset( $_GET['wps_disable'] ) ) {
-	return;
-}
+	$wps = new \Rarst\wps\Plugin();
+	$wps->run();
 
-$wps = new \Rarst\wps\Plugin();
-$wps->run();
-
-//We want all deprecated logging in non-PROD envs, but there's no need to display blocking errors
-global $wps;
-$wps['run']->silenceErrorsInPaths('~.*~', E_DEPRECATED);
+	//We want all deprecated logging in non-PROD envs, but there's no need to display blocking errors
+	$wps['run']->silenceErrorsInPaths('~.*~', E_DEPRECATED);
+});

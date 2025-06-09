@@ -3,6 +3,9 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 This change log adheres to [Keep a CHANGELOG](http://keepachangelog.com/).
 
+## 1.3.3
+- Ensures plugin never loaded before `plugins_loaded` action. This ensures conflicts with Jetpack Autoloader are minimized.
+
 ## 1.3.2
 - Suppresses `E_DEPRECATED` notices in all paths
 
